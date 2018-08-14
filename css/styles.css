@@ -1,0 +1,318 @@
+body {
+    box-sizing: border-box;
+    /* overflow:hidden; */
+    margin:0;
+    background-color: #606560;
+    width:100%;
+    height:100%;
+    /* font-size:3vmin; */
+    /* font-family: 'Alfa Slab One', cursive; */
+    font-family: 'Helvetica', san-serif;
+    /* font-weight: bold; */
+    position:fixed;
+    /* text-shadow: 0vmin 0vmin 0.1vmin black; */
+    transition: all 300ms;
+    text-align:center;
+    /* box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; */
+}
+#bg {
+    box-sizing: border-box;
+    position: relative;
+    /* background:linear-gradient(#454545, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #898989, #454545); */
+    background-color: #787878;
+    width:calc(100vmin - 4vh);
+    height:96%;
+    /* padding:1%; */
+    margin:0 auto;
+    top:2%;
+    /* left:calc(50vw - calc(50vmin)); */
+    box-shadow:0 0 2vmin #222;
+}
+#acro-display {
+    box-sizing: border-box;
+    position: relative;
+    width:76%;
+    height:15%;
+    background-color: #333;
+    /* line-height:24vmin; */
+    padding:3%;
+    padding-top:1%;
+    text-align:center;
+}
+#acro-theme {
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    height:30%;
+    font-size:100%;
+    text-align:center;
+    margin-bottom:2%;
+    color:white;
+    opacity:0;
+    transition: all 300ms ease;
+}
+.acro-char {
+    box-sizing: border-box;
+    position: relative;
+    display:inline-block;
+    /* width:12%;
+    height:12%; */
+    margin-left:1vmin;
+    margin-right:1vmin;
+    color:white;
+    opacity:0;
+    
+    /* background-color: #333; */
+    font-size:6vh;
+    /* font-family:'Press Start 2P'; */
+    font-weight:bold;
+    transform:scale(0);
+    transform-origin: center;
+    transition: all 300ms ease;
+    text-shadow:2px 2px 4vmin black;
+}
+#progress-display {
+    box-sizing: border-box;
+    position: relative;
+    width:76%;
+    height:15%;
+    background-color: #111;
+    padding:2%;
+}
+#status {
+    color:darkgreen;
+    position:absolute;
+    bottom:50%;
+}
+#timer {
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    /* background-color: #111; */
+    /* padding:2%; */
+    margin:0 auto;
+    margin-top:3%;
+    color:green;
+    /* font-family:'Press Start 2P'; */
+    font-size:6vh;
+    font-weight:bold;
+    opacity:0;
+    transition: 500ms all ease;
+    
+}
+#vote-timer {
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    height:40%;
+    background-color: #111;
+    /* padding:2%; */
+    margin:0 auto;
+    /* margin-top:3%; */
+    color:green;
+    /* font-family:'Press Start 2P'; */
+    font-size:6vh;
+    font-weight:bold;
+    text-align:center;
+    transition: 500ms all ease;
+    
+}
+#voting-screen {
+    text-align:left;
+    box-sizing: border-box;
+    position:absolute;
+    width:100%;
+    height:90%;
+    background-color: black;
+    left:0;
+    top:-90%;
+    opacity:1;
+    padding:5%;
+    color:white;
+    overflow-y:scroll;
+    transition: all 300ms ease;
+}
+.vote-count {
+    box-sizing: border-box;
+    position:relative;
+    float:right;
+    width:20%;
+    height:100%;
+    background-color: green;
+    color:white;
+    transform:scale(0);
+    transform-origin: center;
+    transition: all 500ms ease;
+}
+#submitted-acros {
+    text-align:left;
+    box-sizing: border-box;
+    position:relative;
+    width:90%;
+    height:90%;
+    /* background-color: green; */
+    /* margin:0 auto; */
+    margin-top:2%;
+    /* padding:3%; */
+}
+.user-acro {
+    text-align:center;
+    box-sizing: border-box;
+    position:relative;
+    width:100%;
+    height:10vmin;
+    line-height:7.5vmin;
+    background-color: transparent;
+    border:2px solid green;
+    margin-bottom:5%;
+    font-size:1em;
+    padding:1%;
+    transition: all 300ms ease;
+}
+#voting-timer {
+    box-sizing: border-box;
+    position:relative;
+    font-family:'Press Start 2P';
+    font-size:9vmin;
+
+}
+
+#acro-input {
+    box-sizing: border-box;
+    position:absolute;
+    width:100%;
+    height:30%;
+    background-color: blue;
+    padding:3vmin;
+    text-align:center;
+    bottom:0;
+    left:0;
+}
+#acro-instructions {
+    box-sizing: border-box;
+    position:relative;
+    width:100%;
+    height:30%;
+    background-color: gray;
+    padding:2%;
+    font-size:6vmin;
+    color:white
+}
+#acro-field {
+    box-sizing: border-box;
+    position:relative;
+    width:100%;
+    min-height:30%;
+    font-size:1.5em;
+    text-align:center;
+    background-color:#aaa;
+    transition: all 500ms ease;
+}
+#acro-submit-button {
+    box-sizing: border-box;
+    position:relative;
+    width:60%;
+    min-height:30%;
+    font-size:1em;
+    text-align:center;
+}
+#ready-button {
+    box-sizing: border-box;
+    position:absolute;
+    width:80%;
+    height:30%;
+    font-size:2em;
+    text-align:center;
+    left:10%;
+    bottom:0;
+    background-color: lightgreen;
+}
+#user-label {
+    text-align:center;
+    box-sizing: border-box;
+    position:relative;
+    width:92%;
+    height:12%;
+    top:0;
+    /* text-align: left; */
+    /* float:right; */
+    /* background-color:darkgreen; */
+    color:white;
+    font-size:0.75em;
+
+}
+#user-list {
+    box-sizing: border-box;
+    position:relative;
+    width:24%;
+    height:30%;
+    top:0vh;
+    text-align: left;
+    float:right;
+    background-color:black;
+    color:yellow;
+    font-size:1em;
+    padding-top:2%;
+    padding-left:2%;
+    /* display:inline; */
+    /* text-align:right; */
+    /* float:right; */
+}
+.throbber {
+    transition: all 200ms ease;
+}
+#chat-box {
+    box-sizing: border-box;
+    padding-left:2vh;
+    padding-right:2vh;
+    background-color: darkslategrey;
+    border-top: 3vmin solid darkslategrey;
+    border-bottom: 3vmin solid darkslategrey;
+    color:white;
+    font-size:0.75em;
+    position:relative;
+    /* left:4vw; */
+    /* top:30vh; */
+    width:100%;
+    height:34%;
+    overflow-y:scroll;
+    text-align: left;
+    /* transition: all 300ms ease; */
+    /* float:left; */
+}
+#chat-field {
+    box-sizing: border-box;
+    padding:3%;
+    padding-top:0;
+    background-color: darkslategrey;
+    color:black;
+    font-size:1em;
+    position:relative;
+    /* left:0; */
+    /* top:60vh; */
+    width:100%;
+    /* height:12vh; */
+}
+#chat-input {
+    box-sizing: border-box;
+    width:76%;
+    height:5%;
+    font-size:1em;
+    padding-left:0.25em
+}
+#chat-button {
+    box-sizing: border-box;
+    width:24%;
+    height:5%;
+    font-size:1em;
+    float:right;
+}
+
+
+.chat-entry {
+    float:left;
+    width:70%;
+    margin-bottom:2vh;
+}
